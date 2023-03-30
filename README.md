@@ -12,6 +12,8 @@ Ebeveyn veya admin hesabı tarafından belirlenen sitelere giriş yapıldığın
 Çocuğun uygulamayı çalıştırdığında ve kapattığında  hem admin hesaba hem de çocuğu ekleyen ebeveyn hesabına bilgilendirme maili gönderilmesi,
 Çocuk tarafından uygulama çalıştırıp girilen siteler kayıt altına alınmaya başladığında uygulama simge durumuna küçültüğünde sistem tepsisinde bir ikon ile arka planda çalışmaya devam etmesi ve ikona çift tıklandığında tekrardan normal pencere haline gelmesi.
 
+Çalışmaya olan desteklerinden dolayı Sakarya Üniversitesi Öğretim Üyesi Doç.Dr. Emrah AYDEMİR'e teşekkür ederim
+
 ![98407ccd-9915-46d3-b2a5-f0ff6c73b431](https://user-images.githubusercontent.com/120279867/228852701-a239528d-b65d-4408-9724-5d4b72400e3a.jpg)
 ![6642298c-d999-48fe-9dd2-835fda204e68](https://user-images.githubusercontent.com/120279867/228852709-a0241806-6077-424f-b80d-635729366ea1.jpg)
 ![b8367697-4f2c-4c68-bdd5-77a7ebf0390c](https://user-images.githubusercontent.com/120279867/228852710-2dee6dca-4e24-4497-bfcd-e92a68883a3d.jpg)
