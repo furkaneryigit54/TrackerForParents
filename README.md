@@ -36,8 +36,8 @@ Ebeveyn veya admin hesabı tarafından belirlenen sitelere giriş yapıldığın
                                         EBEVEYN KULLANICI EKLEME EKRANI
 ![tfpv2_3](https://user-images.githubusercontent.com/120279867/229457137-bd73d28e-7695-4b0b-b51c-5c1e19ccb2df.png)
 
-                                        EBEVEYN KULLANICI DÜZENLEME!
-[tfpv2_4](https://user-images.githubusercontent.com/120279867/229457379-0b530045-fd53-4928-875d-31a88771a58b.png)
+                                        EBEVEYN KULLANICI DÜZENLEME
+![tfpv2_4](https://user-images.githubusercontent.com/120279867/229457379-0b530045-fd53-4928-875d-31a88771a58b.png)
 
                                         EBEVEYN YETKİLİ OLDUĞU ÇOCUKLARIN TARAYICI GEÇMİŞİNİ GÖRME
 ![tfpv2_5](https://user-images.githubusercontent.com/120279867/229457590-38ee06ac-efbd-4ed4-a9ef-1d5efef34daf.png)
