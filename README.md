@@ -25,22 +25,22 @@ Ebeveyn veya admin hesabı tarafından belirlenen sitelere giriş yapıldığın
 Çalışmaya olan desteklerinden dolayı Sakarya Üniversitesi Öğretim Üyesi Doç.Dr. Emrah AYDEMİR'e teşekkür ederim
 
 
-![98407ccd-9915-46d3-b2a5-f0ff6c73b431](https://user-images.githubusercontent.com/120279867/228852701-a239528d-b65d-4408-9724-5d4b72400e3a.jpg)
+                                        UYGULAMA GİRİŞ EKRANI
+![tfpv2_1](https://user-images.githubusercontent.com/120279867/229456861-00c76180-10f0-47bf-862d-7cde9b170aee.png)
 
-![6642298c-d999-48fe-9dd2-835fda204e68](https://user-images.githubusercontent.com/120279867/228852709-a0241806-6077-424f-b80d-635729366ea1.jpg)
 
-![b8367697-4f2c-4c68-bdd5-77a7ebf0390c](https://user-images.githubusercontent.com/120279867/228852710-2dee6dca-4e24-4497-bfcd-e92a68883a3d.jpg)
+                                        EBEVEYN GİRİŞİ ANA EKRAN
+![tfpv2_2](https://user-images.githubusercontent.com/120279867/229457027-2ce2381f-1454-45c2-b2b0-34c2a1491f59.png)
 
-![Screenshot_1](https://user-images.githubusercontent.com/120279867/228852714-d7eed6e9-d40b-444f-bf19-305ec06e7300.png)
 
-![Screenshot_3](https://user-images.githubusercontent.com/120279867/228852716-86a74255-9b77-4f14-bf37-7f8ca79f1282.png)
+                                        EBEVEYN KULLANICI EKLEME EKRANI
+![tfpv2_3](https://user-images.githubusercontent.com/120279867/229457137-bd73d28e-7695-4b0b-b51c-5c1e19ccb2df.png)
 
-![Screenshot_4](https://user-images.githubusercontent.com/120279867/228852719-a0b264f2-7ebc-4d70-9d8c-aab4a09825d5.png)
+                                        EBEVEYN KULLANICI DÜZENLEME!
+[tfpv2_4](https://user-images.githubusercontent.com/120279867/229457379-0b530045-fd53-4928-875d-31a88771a58b.png)
 
-![Screenshot_5](https://user-images.githubusercontent.com/120279867/228852723-14b80e18-e94d-4820-bc7c-471036512cc4.png)
-
-![Screenshot_7](https://user-images.githubusercontent.com/120279867/228852726-3ebe9069-1505-4563-ad3d-2a6e54d8bc3b.png)
-
-![Screenshot_8](https://user-images.githubusercontent.com/120279867/228852730-6158576e-ef3a-41a9-90ea-4245c7794bdd.png)
-
-![Screenshot_9](https://user-images.githubusercontent.com/120279867/228852735-8b448831-1ec3-4e64-b757-5a8fa24b9915.png)
+                                        EBEVEYN YETKİLİ OLDUĞU ÇOCUKLARIN TARAYICI GEÇMİŞİNİ GÖRME
+![tfpv2_5](https://user-images.githubusercontent.com/120279867/229457590-38ee06ac-efbd-4ed4-a9ef-1d5efef34daf.png)
+                                        
+                                        ÇOCUK GİRİŞ EKRANI(GİRİLEN SİTELERİN KAYIT ALTINA ALINMASI)
+![tfpv2_6](https://user-images.githubusercontent.com/120279867/229457629-c971a683-e215-4368-9a62-41001cc57c28.png)
