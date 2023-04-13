@@ -25,22 +25,8 @@ Ebeveyn veya admin hesabı tarafından belirlenen sitelere giriş yapıldığın
 Çalışmaya olan desteklerinden dolayı Sakarya Üniversitesi Öğretim Üyesi Doç.Dr. Emrah AYDEMİR'e teşekkür ederim
 
 
-                                        UYGULAMA GİRİŞ EKRANI
-![tfpv2_1](https://user-images.githubusercontent.com/120279867/229456861-00c76180-10f0-47bf-862d-7cde9b170aee.png)
 
 
-                                        EBEVEYN GİRİŞİ ANA EKRAN
-![tfpv2_2](https://user-images.githubusercontent.com/120279867/229457027-2ce2381f-1454-45c2-b2b0-34c2a1491f59.png)
 
 
-                                        EBEVEYN KULLANICI EKLEME EKRANI
-![tfpv2_3](https://user-images.githubusercontent.com/120279867/229457137-bd73d28e-7695-4b0b-b51c-5c1e19ccb2df.png)
-
-                                        EBEVEYN KULLANICI DÜZENLEME
-![tfpv2_4](https://user-images.githubusercontent.com/120279867/229457379-0b530045-fd53-4928-875d-31a88771a58b.png)
-
-                                        EBEVEYN YETKİLİ OLDUĞU ÇOCUKLARIN TARAYICI GEÇMİŞİNİ GÖRME
-![tfpv2_5](https://user-images.githubusercontent.com/120279867/229457590-38ee06ac-efbd-4ed4-a9ef-1d5efef34daf.png)
-                                        
-                                        ÇOCUK GİRİŞ EKRANI(GİRİLEN SİTELERİN KAYIT ALTINA ALINMASI)
-![tfpv2_6](https://user-images.githubusercontent.com/120279867/229457629-c971a683-e215-4368-9a62-41001cc57c28.png)
+![Screenshot_1](https://user-images.githubusercontent.com/120279867/231844113-e5fd9b92-88c4-4e2e-b654-fe4cf4225b9a.png)
