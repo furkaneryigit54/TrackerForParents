@@ -61,6 +61,34 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABIBJREFUeF7t
+        mmuIVVUYhmcqs0ghLyVRglkmKpIGEyGYE9SPgQIZms7cGwcbQYiEkIKoBiLoZxISEUKQVGZFSlBIN6J+
+        RPRDLNS8/BAUvJRolpcCe77pnWHtb84M58yZvV1H1gMvZ89+v/Wtb619OWvvMw2JRCKRSCQSiUT+tLe3
+        L+/q6nqps7NzF5970HFpj+3r7u5+kc9lCr86GBwcvIZBtaP9DPRyhdrHZDxB88b/s9Qpvb299zCYn93g
+        KhaT9lOpVLpL6eqLjo6OxxjEn35QE9BZ9KjS1gccuYco+lIwiCGx/wKf7/LZiuajGZJtt3Lab+XTYjLt
+        0EUmdJXSx42dshR8yg3AtJ2b4DyFjUlPT8+dTMJHZdqfNE9h0dJIoT+6wv/lyD4jv2Jot8HaBnlMP2DF
+        e2NkoB2uYNN62VVD26ddrsv6dogSO/p7XcGfyJsojQx4p8v5q7y4oLAmV+hf6A7ZE8buG/7GyKTcJzse
+        KOyVsEj0nqyaIde2MDcTMCgrHijq27BIVJJVM+TqdLm/lhUPFHUgLJIJuVtWzZBrYZibS2K/rHigsMyq
+        r62tbZqsmunv758e5kZnZcUDRZ0Li2TRcpOsmqmXCfgtLNIehGTVjL8E0F5Z8ZDnTZDcmQUW94CvZMUD
+        hRX2NcgEvCwrHihqWVgkujQZlwF5FqN/grympbKjIo+lsE3ADpczzqWwwbW62hVrel521dD2BZfLFPXL
+        kbwfh7+XHS95vhCppH0UMIAxX4lxNryPevl7cV9f3w2sGG+0bfQk+sBiLNapfl6JDWMFM9ATZQZTrU6R
+        p1lp6wuKfwAdCQZTlRj4MbRC6eoHTuuZnMpvjHE6V6vz5Hmdy+VmpY8bCi5N0qnvZT+hPa5u4mNgYGAK
+        A3/LFZ0RR/ILYuwG2MQ9Yg5/D/0uYNu2zzz+tt8Ny7aXNltf6jYO7Nm/gsLtmt6pJmNC3Ke+XRl9PpmP
+        2zXR0tIylYK+dAWa7P3AZrfP9KyajsI8F2uyHPaC1e//rLm5+To1vXJQyDuusKFXVhyhRfK/8z7aztmw
+        cngdQPyD7PvYxZi+sRxcIkvYzrxvkDaZf8VgEKN+CGHfbgZ/q0KGX2ac9nEV6A8mZoHS2CTMsdw+jphW
+        hRQLR+4WCvBL3gNWqEJGYN8qvN9d7Hiyxc9KNR+BfbfhHXaxx3nsnqWQ4mDm33aFnGOgS2SPgvj5xJS7
+        V2RE3C57HlCzUTAJ9xL3t2v3puxi4KFkLp1edEVskD0uDOARYregQwz2goltO6pb2H5YYeNCjo3Ej/Rt
+        OTgLbpedPxTwWlgA2lfkHVlrjoNhDUzCq7LzhWv/Wjo8GnZOMWtkFwb9PhXWgI7Y/yPJzg8Gu8J1fMa+
+        ymQXhi2E6DvzYwxnwf2y84OOMq+pmJCtsgqH/v3b4udk5QcdZRYsTMBaWYVD3+tcLR/Kyg86+iXsFDXJ
+        Khz6tvcN4QTslpUfdJRZ/PDdP1tW4diKM6yFCTghKz/oKPP9zw3welmFowexkVpsPSArkUgkEolEIpEY
+        l4aG/wD4OQNdOSXh0wAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="timerButonRenkler.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>118, 17</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAIAEBAAAAEAIABoBAAAJgAAACAgAAABACAAqBAAAI4EAAAoAAAAEAAAACAAAAABACAAAAAAADAE

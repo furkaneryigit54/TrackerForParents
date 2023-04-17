@@ -30,21 +30,28 @@ public partial class Form1 : Form
         smtp.EnableSsl = true;
         string konustr = "Tracker For Parents Bilgilendirme";
         string icerik = "Çocuðunuz " + kullaniciad + "; uygulamaya giriþ yapmýþtýr.";
-        smtp.Credentials = new NetworkCredential("trackerforparentsinfo@gmail.com", "12345");
-        MailMessage mail = new MailMessage();
-        mail.From = new MailAddress("trackerforparentsinfo@gmail.com", "Tracker For Parents Bilgilendirme");
-        mail.To.Add(adminMail);
-        mail.Subject = konustr;
-        mail.IsBodyHtml = true;
-        mail.Body = icerik;
-        smtp.Send(mail);
-        MailMessage mail2 = new MailMessage();
-        mail2.From = new MailAddress("trackerforparentsinfo@gmail.com", "Tracker For Parents Bilgilendirme");
-        mail2.To.Add(ekleyenMail);
-        mail2.Subject = konustr;
-        mail2.IsBodyHtml = true;
-        mail2.Body = icerik;
-        smtp.Send(mail2);
+        smtp.Credentials = new NetworkCredential("trackerforparentsinfo@gmail.com", "SÝFRE");
+        if (adminwantsmail==1)
+        {
+            MailMessage mail = new MailMessage();
+            mail.From = new MailAddress("trackerforparentsinfo@gmail.com", "Tracker For Parents Bilgilendirme");
+            mail.To.Add(adminMail);
+            mail.Subject = konustr;
+            mail.IsBodyHtml = true;
+            mail.Body = icerik;
+            smtp.Send(mail);
+        }
+
+        if (ebeveynwantsmail==1)
+        {
+            MailMessage mail2 = new MailMessage();
+            mail2.From = new MailAddress("trackerforparentsinfo@gmail.com", "Tracker For Parents Bilgilendirme");
+            mail2.To.Add(ekleyenMail);
+            mail2.Subject = konustr;
+            mail2.IsBodyHtml = true;
+            mail2.Body = icerik;
+            smtp.Send(mail2);
+        }
 
     }
     
@@ -53,21 +60,25 @@ public partial class Form1 : Form
     private string adminMail = "";
     private string ekleyenMail = "";
     private string kullaniciad = "";
-    public void Bilgiler(string isim, int idkullanici,string siteler,string mail1,string mail2)
+    int adminwantsmail=0;
+    int ebeveynwantsmail = 0;
+    public void Bilgiler(string isim, int idkullanici,string siteler,string adminmail,string ebeveynmail,int wantsmail1,int wantsmail2)
     {
         //Maile eklenecek deðiþkenlerin giriþ ekranýndan gelen bilgilerini deðiþkenlere atama
         label1.Text = isim + " Ýçin Tarayýcý Geçmiþi Kaydediliyor";
         kullaniciad = isim;
         id = idkullanici;
         sitelerlist = siteler;
-        adminMail = mail1;
-        ekleyenMail = mail2;
+        adminMail = adminmail;
+        ekleyenMail = ebeveynmail;
+        adminwantsmail = wantsmail1;
+        ebeveynwantsmail=wantsmail2;
     }
    
     public void timer1_Tick(object sender, EventArgs e)
     {
         //Her timer tickinde 4 farklý tarayýcý için girilen siteleri çeken ve veri tabanýna ekleyen metotlarý çaðýrma
-        SQLiteConnection con = new SQLiteConnection("Data Source=TFP.sqlite;Version=3");
+        SQLiteConnection con = new SQLiteConnection("Data Source=\"C:\\TFPDB\\TFP.sqlite\";Version=3");
         con.Open();
         //Her bir tarayýcý için ziyaret edilen siteleri veri setine ekleyen metotlar
         ChromeDBAdd();
@@ -82,7 +93,7 @@ public partial class Form1 : Form
     public void EdgeDBAdd()
     {
         //Belirlenen tarayýcý için tarayýcý sekme ismini çekme ve eðer veritabanýnda yoksa ekleme varsa sitede geçirilen süreyi güncelleme
-        SQLiteConnection con = new SQLiteConnection("Data Source=TFP.sqlite;Version=3");
+        SQLiteConnection con = new SQLiteConnection("Data Source=\"C:\\TFPDB\\TFP.sqlite\";Version=3");
         con.Open();
         string sonurl;
         string sontarih;
@@ -106,12 +117,12 @@ public partial class Form1 : Form
             {
                 id = (long)command.ExecuteScalar();
             }
-            DBGuncelle(guncelSure + " dk", id.ToString());
+            DBGuncelle(guncelSure , id.ToString());
         }
         if (eklencekurl != sonurl & eklencekurl != "")
         {
             string tarih = DateTime.Now.ToString();
-            DBEkle(4, eklencekurl, tarih, Convert.ToString(0) + " dk");
+            DBEkle(4, eklencekurl, tarih, Convert.ToString(0));
         }
         con.Close();
     }
@@ -119,7 +130,7 @@ public partial class Form1 : Form
     private void FirefoxDBAdd()
     {
         //Belirlenen tarayýcý için tarayýcý sekme ismini çekme ve eðer veritabanýnda yoksa ekleme varsa sitede geçirilen süreyi güncelleme
-        SQLiteConnection con = new SQLiteConnection("Data Source=TFP.sqlite;Version=3");
+        SQLiteConnection con = new SQLiteConnection("Data Source=\"C:\\TFPDB\\TFP.sqlite\";Version=3");
         con.Open();
         string sonurl;
         string sontarih;
@@ -143,12 +154,12 @@ public partial class Form1 : Form
             {
                 id = (long)command.ExecuteScalar();
             }
-            DBGuncelle(guncelSure + " dk", id.ToString());
+            DBGuncelle(guncelSure, id.ToString());
         }
         if (eklencekurl != sonurl & eklencekurl != "")
         {
             string tarih = DateTime.Now.ToString();
-            DBEkle(3, eklencekurl, tarih, Convert.ToString(0) + " dk");
+            DBEkle(3, eklencekurl, tarih, Convert.ToString(0));
         }
         con.Close();
     }
@@ -156,7 +167,7 @@ public partial class Form1 : Form
     public void OperaDBAdd()
     {
         //Belirlenen tarayýcý için tarayýcý sekme ismini çekme ve eðer veritabanýnda yoksa ekleme varsa sitede geçirilen süreyi güncelleme
-        SQLiteConnection con = new SQLiteConnection("Data Source=TFP.sqlite;Version=3");
+        SQLiteConnection con = new SQLiteConnection("Data Source=\"C:\\TFPDB\\TFP.sqlite\";Version=3");
         con.Open();
         string sonurl;
         string sontarih;
@@ -180,12 +191,12 @@ public partial class Form1 : Form
             {
                 id = (long)command.ExecuteScalar();
             }
-            DBGuncelle(guncelSure + " dk", id.ToString());
+            DBGuncelle(guncelSure, id.ToString());
         }
         if (eklencekurl != sonurl & eklencekurl != "")
         {
             string tarih = DateTime.Now.ToString();
-            DBEkle(2, eklencekurl, tarih, Convert.ToString(0) + " dk");
+            DBEkle(2, eklencekurl, tarih, Convert.ToString(0));
         }
         con.Close();
     }
@@ -193,7 +204,7 @@ public partial class Form1 : Form
     public void ChromeDBAdd()
     {
         //Belirlenen tarayýcý için tarayýcý sekme ismini çekme ve eðer veritabanýnda yoksa ekleme varsa sitede geçirilen süreyi güncelleme
-        SQLiteConnection con = new SQLiteConnection("Data Source=TFP.sqlite;Version=3");
+        SQLiteConnection con = new SQLiteConnection("Data Source=\"C:\\TFPDB\\TFP.sqlite\";Version=3");
         con.Open();
         string sonurl;
         string sontarih;
@@ -216,12 +227,12 @@ public partial class Form1 : Form
            {
                id = (long)command.ExecuteScalar();
            }
-           DBGuncelle(guncelSure+" dk",id.ToString());
+           DBGuncelle(guncelSure,id.ToString());
         }
         if (eklencekurl != sonurl & eklencekurl != "")
         {
             string tarih = DateTime.Now.ToString();
-            DBEkle(1, eklencekurl, tarih, Convert.ToString(0)+" dk");
+            DBEkle(1, eklencekurl, tarih, Convert.ToString(0));
         }
         con.Close();
     }
@@ -230,7 +241,7 @@ public partial class Form1 : Form
     private void DBGuncelle(string sure,string id)
     {
         //Tarayýcý metotlarýndan gelen süre güncelleme sorgularýný gerçekleþtirme
-        SQLiteConnection con = new SQLiteConnection("Data Source=TFP.sqlite;Version=3");
+        SQLiteConnection con = new SQLiteConnection("Data Source=\"C:\\TFPDB\\TFP.sqlite\";Version=3");
         SQLiteCommand cmd = new SQLiteCommand("update history set sure=$sure where id=(SELECT MAX(id) from history where id=$id)", con);
         cmd.Parameters.AddWithValue("$sure", sure);
         cmd.Parameters.AddWithValue("$id", id);
@@ -248,7 +259,7 @@ public partial class Form1 : Form
     private void DBEkle(int tarayici,string eklencekurl,string tarih, string sure)
     {
         //Tarayýcý metotlarýndan gelen veriyi veritabanýna ekleme sorgularýný gerçekleþtirme
-        SQLiteConnection con = new SQLiteConnection("Data Source=TFP.sqlite;Version=3");
+        SQLiteConnection con = new SQLiteConnection("Data Source=\"C:\\TFPDB\\TFP.sqlite\";Version=3");
         SQLiteCommand cmd = new SQLiteCommand("INSERT INTO history (TarayiciID,Site,Tarih,Sure,KullaniciID) VALUES ($tarayici,$eklenecekurl,$tarih,$sure,$kullaniciID)", con);
         cmd.Parameters.AddWithValue("$tarayici", tarayici);
         cmd.Parameters.AddWithValue("$eklenecekurl", eklencekurl);
@@ -270,29 +281,63 @@ public partial class Form1 : Form
         siteler = siteler.Where(c => c != "").ToArray();
         for (int i = 0; i < siteler.Length; i++)
         {
-            if (eklencekurl.ToLower().Contains(siteler[i]))
+            string karsilastirilacakSite = eklencekurl;
+            string[] dizi = karsilastirilacakSite.Split("Google Chrome");
+            karsilastirilacakSite = "";
+            foreach (string s in dizi)
+            {
+                karsilastirilacakSite += s;
+            }
+            string[] dizi1 = karsilastirilacakSite.Split("Opera");
+            karsilastirilacakSite = "";
+            foreach (string s in dizi1)
+            {
+                karsilastirilacakSite += s;
+            }
+            string[] dizi2 = karsilastirilacakSite.Split("Microsoft? Edge");
+            karsilastirilacakSite = "";
+            foreach (string s in dizi2)
+            {
+                karsilastirilacakSite += s;
+            }
+            string[] dizi3 = karsilastirilacakSite.Split("Mozilla Firefox");
+            karsilastirilacakSite = "";
+            foreach (string s in dizi3)
+            {
+                karsilastirilacakSite += s;
+            }
+            if (karsilastirilacakSite.ToLower().Contains(siteler[i]))
             {
                 SmtpClient smtp = new SmtpClient();
                 smtp.Port = 587;
                 smtp.Host = "smtp.gmail.com";
                 smtp.EnableSsl = true;
                 string konustr = "Tracker For Parents Bilgilendirme";
-                string icerik = "Çocuðunuz "+kullaniciad+"; " + eklencekurl + " sitesine giriþ yapmýþtýr.";
-                smtp.Credentials = new NetworkCredential("trackerforparentsinfo@gmail.com", "12345");
-                MailMessage mail = new MailMessage();
-                mail.From = new MailAddress("trackerforparentsinfo@gmail.com", "Tracker For Parents Bilgilendirme");
-                mail.To.Add(adminMail);
-                mail.Subject = konustr;
-                mail.IsBodyHtml = true;
-                mail.Body = icerik;
-                smtp.Send(mail);
-                MailMessage mail2 = new MailMessage();
-                mail2.From= new MailAddress("trackerforparentsinfo@gmail.com", "Tracker For Parents Bilgilendirme");
-                mail2.To.Add(ekleyenMail);
-                mail2.Subject = konustr;
-                mail2.IsBodyHtml = true;
-                mail2.Body = icerik;
-                smtp.Send(mail2);
+                
+                smtp.Credentials = new NetworkCredential("trackerforparentsinfo@gmail.com", "SÝFRE");
+                if (adminwantsmail==1)
+                {
+                    string icerik1 = "Çocuðunuz " + kullaniciad + "; " + eklencekurl + " sitesine giriþ yapmýþtýr. Bu e-posta tarafýnýza uygulamada yönetici hesabýna sahip olduðunuz için gönderilmiþtir.";
+                    MailMessage mail = new MailMessage();
+                    mail.From = new MailAddress("trackerforparentsinfo@gmail.com", "Tracker For Parents Bilgilendirme");
+                    mail.To.Add(adminMail);
+                    mail.Subject = konustr;
+                    mail.IsBodyHtml = true;
+                    mail.Body = icerik1;
+                    smtp.Send(mail);
+                }
+
+                if (ebeveynwantsmail==1)
+                {
+                    string icerik = "Çocuðunuz " + kullaniciad + "; " + eklencekurl + " sitesine giriþ yapmýþtýr.";
+                    MailMessage mail2 = new MailMessage();
+                    mail2.From= new MailAddress("trackerforparentsinfo@gmail.com", "Tracker For Parents Bilgilendirme");
+                    mail2.To.Add(ekleyenMail);
+                    mail2.Subject = konustr;
+                    mail2.IsBodyHtml = true;
+                    mail2.Body = icerik;
+                    smtp.Send(mail2);
+                }
             }
         }
     }
@@ -324,6 +369,11 @@ public partial class Form1 : Form
 
     private void button1_Click(object sender, EventArgs e)
     {
+      
+    }
+
+    private void button1_Click_1(object sender, EventArgs e)
+    {
         //Uygulamadan çýkýþ yapma ve yaparken admin ve çocuðu ekleyen ebeveyn hesabýna bilgilendirme maili gönderilmesi
         SmtpClient smtp = new SmtpClient();
         smtp.Port = 587;
@@ -331,21 +381,60 @@ public partial class Form1 : Form
         smtp.EnableSsl = true;
         string konustr = "Tracker For Parents Bilgilendirme";
         string icerik = "Çocuðunuz " + kullaniciad + "; uygulamadan çýkýþ yapmýþtýr.";
-        smtp.Credentials = new NetworkCredential("trackerforparentsinfo@gmail.com", "12345");
-        MailMessage mail = new MailMessage();
-        mail.From = new MailAddress("trackerforparentsinfo@gmail.com", "Tracker For Parents Bilgilendirme");
-        mail.To.Add(adminMail);
-        mail.Subject = konustr;
-        mail.IsBodyHtml = true;
-        mail.Body = icerik;
-        smtp.Send(mail);
-        MailMessage mail2 = new MailMessage();
-        mail2.From = new MailAddress("trackerforparentsinfo@gmail.com", "Tracker For Parents Bilgilendirme");
-        mail2.To.Add(ekleyenMail);
-        mail2.Subject = konustr;
-        mail2.IsBodyHtml = true;
-        mail2.Body = icerik;
-        smtp.Send(mail2);
+        smtp.Credentials = new NetworkCredential("trackerforparentsinfo@gmail.com", "SÝFRE");
+        if (adminwantsmail==1)
+        {
+            MailMessage mail = new MailMessage();
+            mail.From = new MailAddress("trackerforparentsinfo@gmail.com", "Tracker For Parents Bilgilendirme");
+            mail.To.Add(adminMail);
+            mail.Subject = konustr;
+            mail.IsBodyHtml = true;
+            mail.Body = icerik;
+            smtp.Send(mail);
+        }
+
+        if (ebeveynwantsmail==1)
+        {
+            MailMessage mail2 = new MailMessage();
+            mail2.From = new MailAddress("trackerforparentsinfo@gmail.com", "Tracker For Parents Bilgilendirme");
+            mail2.To.Add(ekleyenMail);
+            mail2.Subject = konustr;
+            mail2.IsBodyHtml = true;
+            mail2.Body = icerik;
+            smtp.Send(mail2);
+        }
         Application.Exit();
+    }
+
+    private void button2_Click(object sender, EventArgs e)
+    {
+        this.WindowState = FormWindowState.Minimized;
+    }
+
+    private void pictureBox1_Click(object sender, EventArgs e)
+    {
+
+    }
+    private bool mouseDown = false;
+    private Point offset;
+    private void panel1_MouseDown(object sender, MouseEventArgs e)
+    {
+        offset.X = e.X;
+        offset.Y = e.Y;
+        mouseDown = true;
+    }
+
+    private void panel1_MouseMove(object sender, MouseEventArgs e)
+    {
+        if (mouseDown == true)
+        {
+            Point currentScreenPos = PointToScreen(e.Location);
+            Location = new Point(currentScreenPos.X - offset.X, currentScreenPos.Y - offset.Y);
+        }
+    }
+
+    private void panel1_MouseUp(object sender, MouseEventArgs e)
+    {
+        mouseDown = false;
     }
 }

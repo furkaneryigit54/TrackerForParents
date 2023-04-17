@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackerForParents", "TrackerForParents\TrackerForParents.csproj", "{6959BDE7-5E1A-437D-B345-9EFFE9CCF1AF}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TFP", "TFP\TFP.vdproj", "{6AB37D63-D2D5-4A34-8FD8-DE5076DCCDF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{6959BDE7-5E1A-437D-B345-9EFFE9CCF1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6959BDE7-5E1A-437D-B345-9EFFE9CCF1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6959BDE7-5E1A-437D-B345-9EFFE9CCF1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AB37D63-D2D5-4A34-8FD8-DE5076DCCDF1}.Debug|Any CPU.ActiveCfg = Debug
+		{6AB37D63-D2D5-4A34-8FD8-DE5076DCCDF1}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
