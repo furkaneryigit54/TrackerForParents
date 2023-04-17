@@ -69,7 +69,7 @@ Bu ekrandan kullanıcı adınızı, şifrenizi, e-posta adresinizi(tekrardan do�
 ![image](https://user-images.githubusercontent.com/120279867/232467085-1408a374-ffe9-4933-a2e6-25cf9ba1771d.png)
 
 ## Çocuk Girişi Ana Ekran
-Uygulamaya eklenen çocuk hesabıyla giriş yapıldığında aşağıdaki ekran gözükür ve girilen siteler kayıt altına alınmaya başlanır.
+Uygulamaya eklenen çocuk hesabıyla giriş yapıldığında aşağıdaki ekran gözükür ve girilen siteler kayıt altına alınmaya başlanır. Bu ekran simge durumuna küçültüğünde sistem tepsisine gönderilir ve görev çubuğunda gözükmez.
 
 Uygulamaya çocuk olarak giriş, çıkış ve belirlenen sitelere giriş yapıldığında (ebeveyn tercihine bağlı olarak) e-posta ile bilgilendirme yapılır.
 
