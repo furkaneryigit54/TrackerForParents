@@ -30,25 +30,30 @@ Kullanıcı başarıyla eklendikten sonra tekrardan giriş yapma ekranına yönl
 
 ## Ana Giriş
 Uygulamaya başarılı bir şekilde ebeveyn olarak giriş yapıldığında ana giriş ekranı sizi karşılayacak.
-Bu ekrandan eklediğiniz çocukların en fazla vakit geçirdikleri site ve günlük olarak internet kullanım grafiği vardır.
+
+Bu ekranda eklediğiniz çocukların en fazla vakit geçirdikleri site ve günlük olarak internet kullanım grafiği vardır.
+
 Bu ekrandan kullanıcı ekleyebilir, kullanıcıları düzenleyebilir, eklediğiniz çocukların tarayıcı geçmişine erişebilir ve kendi hesap ayarlarınızı değiştirebilirsiniz.
 
 ![image](https://user-images.githubusercontent.com/120279867/232465465-15128aac-8d58-444f-806a-7b024e4f6fb5.png)
 
 ## Kullanıcı Ekleme
 Kullanıcı ekleme ekranından farklı bir ebeveyn hesabı veya bir çocuk hesabı eklenebilir.
+
 (Uygulamaya ilk giriş yapıldığındakiyle aynı şekilde ilerler)
 
 ![image](https://user-images.githubusercontent.com/120279867/232465894-d3041276-b0b9-4edd-a594-912a2c10350b.png)
 
 ## Kullanıcı Düzenleme
 Bu ekrandan eklediğiniz kullanıcıları düzenleyebilirsiniz veya silebilirsiniz.
+
 Eklediğiniz çocuklar için ziyaret edildiğinde e-posta almak istediğiniz siteleri ekleyebilirsiniz veya çıkarabilirsiniz.
 
 ![image](https://user-images.githubusercontent.com/120279867/232466201-21368be0-eb17-4c8c-a112-cf49a466fa07.png)
 
 ## Girilen Siteler
 Bu ekrandan eklediğiniz çocukların hangi tarihlerde hangi sitelere ne kadar süreyle girdiğini görebilirsiniz.
+
 Belirli siteleri görmek için arama yapılabilir.
 
 ![image](https://user-images.githubusercontent.com/120279867/232466844-f63300ed-5368-40ed-a592-ade0d5050166.png)
@@ -65,6 +70,7 @@ Bu ekrandan kullanıcı adınızı, şifrenizi, e-posta adresinizi(tekrardan do�
 
 ## Çocuk Girişi Ana Ekran
 Uygulamaya eklenen çocuk hesabıyla giriş yapıldığında aşağıdaki ekran gözükür ve girilen siteler kayıt altına alınmaya başlanır.
+
 Uygulamaya çocuk olarak giriş, çıkış ve belirlenen sitelere giriş yapıldığında (ebeveyn tercihine bağlı olarak) e-posta ile bilgilendirme yapılır.
 
 ![image](https://user-images.githubusercontent.com/120279867/232467781-cef6d92c-b2bd-4faa-9022-dd10517cd89b.png)
@@ -73,6 +79,7 @@ Uygulamaya çocuk olarak giriş, çıkış ve belirlenen sitelere giriş yapıld
 ## Giriş Bilgilerinin Unutulması
 
 Uygulamaya giriş ekranında 'Giriş Bilgilerimi Unuttum' yazısına tıklayarak kayıtlı e-posta adresinize kullanıcı adı ve rastgele oluşturulmuş şifrenizi göndertebilir.
+
 Eğer e-posta adresinize artık erişiminiz yoksa veya e-posta adresinizi de unuttuysan uygulamayı tamamen sıfırlayarak tekrardan hesap oluşturabilirsiniz.
 
 ![image](https://user-images.githubusercontent.com/120279867/232468784-efe72d49-1f5f-45e2-8e49-eadf60837dec.png)
