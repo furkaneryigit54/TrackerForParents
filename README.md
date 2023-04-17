@@ -12,6 +12,7 @@ Uygulama ilk açıldığında herhangi bir kullanıcı verisi olmadığı için 
 Tamam'a basarak ilk kullanıcı yani uygulamadaki yönetici olacak ebeveyn hesabını eklemelisiniz.
 
 ![image](https://user-images.githubusercontent.com/120279867/232463672-f0a873d6-2885-43ed-b1dc-b8a6101d7d7e.png)
+
 (Bu hesap eklenen bütün çocuk ve ebeveyn hesaplarını yönetebilecektir. Diğer eklenen ebeveyn hesapları sadece kendi ekledikleri ebeveyn ve çocuk hesaplarını yönetebilir.
 Ayrıca bütün bilgilendirme mailleri bu hesaba da iletilecektir.)
 
