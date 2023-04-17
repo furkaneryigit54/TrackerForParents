@@ -78,7 +78,7 @@ Uygulamaya çocuk olarak giriş, çıkış ve belirlenen sitelere giriş yapıld
 
 ## Giriş Bilgilerinin Unutulması
 
-Uygulamaya giriş ekranında 'Giriş Bilgilerimi Unuttum' yazısına tıklayarak kayıtlı e-posta adresinize kullanıcı adı ve rastgele oluşturulmuş şifrenizi göndertebilir.
+Uygulamaya giriş ekranında 'Giriş Bilgilerimi Unuttum' yazısına tıklayarak kayıtlı e-posta adresinize kullanıcı adı ve rastgele oluşturulmuş yeni şifrenizi göndertebilirsiniz.
 
 Eğer e-posta adresinize artık erişiminiz yoksa veya e-posta adresinizi de unuttuysan uygulamayı tamamen sıfırlayarak tekrardan hesap oluşturabilirsiniz.
 
