@@ -88,6 +88,3 @@ Eğer e-posta adresinize artık erişiminiz yoksa veya e-posta adresinizi de unu
 
 
 
-## Teşekkür
-
-Çalışmaya olan desteklerinden dolayı Sakarya Üniversitesi Öğretim Üyesi Doç.Dr. Emrah AYDEMİR'e teşekkür ederim
